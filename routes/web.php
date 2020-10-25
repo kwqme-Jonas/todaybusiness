@@ -25,6 +25,7 @@ Route::get('/news', 'pagesController@news');
 Route::get('/login', 'pagesController@login');
 Route::get('/register', 'pagesController@register');
 Route::get('/profile', 'pagesController@profile');
+Route::get('/contact', 'contactUsController@contact');
 
 Route::get('/contact', [
    'uses' => 'contactUsController@createForm'
