@@ -20,16 +20,6 @@ class ContactUsController extends Controller
 
         contact::create($request->all());
         
-        \Mail::send('mail',
-        array(
-            'name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'message' => $request->get('message')
-        ), function($message) use ($request)
-        {
-            $message->from('name');
-            $message->to('businesstodaygh@gmail.com', 'Admin')->message($request->get('message'));
-        });
 
         return back()->with('success', 'Thank You for contacting us!');
     }   
