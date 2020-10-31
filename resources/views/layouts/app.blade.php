@@ -23,14 +23,12 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light w-full text-gray-700 bg-white fixed border-b border-teal-300 z-10 top-0 shadow-md">
-            <div class="container flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm w-full text-gray-700 bg-white fixed border-b border-teal-300 z-10 top-0 shadow-md">
+            <div class="container">
                 <a class="text-green-500 px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="{{ url('/') }}">
                  HOME
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
@@ -43,11 +41,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/login">LOGIN</a>
+                               
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                  <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/register">REGISTER</a>
+                                    
                                 </li>
                             @endif
                         @else
