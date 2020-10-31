@@ -43,11 +43,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                               
+                                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">Home</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    
+                                  <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/about">About Us</a>
                                 </li>
                             @endif
                         @else
